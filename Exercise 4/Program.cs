@@ -304,7 +304,7 @@
             //----------------------------------------------- ExamineList() --------------------------------------------
             // Övning 1: ExamineList()
 
-            //ExamineList();
+            ExamineList();
 
             // 2. Ökar listans kapacitet när vi försöker lägga till en ny element mer än "listans Count".
             // 3. Kapacitetsstorleken blir dubbelt så stor som den underliggande arrayen.
@@ -316,24 +316,24 @@
             //----------------------------------------------- ExamineQueue() -------------------------------------------
             // Övning 2: ExamineQueue()
 
-            //ExamineQueue();
+            ExamineQueue();
 
 
             //----------------------------------------------- ExamineStack() -------------------------------------------
             // Övning 3: ExamineStack()
 
-            //ExamineStack();
+            ExamineStack();
 
             // 1. Det är dumt att använda en stack på det här fallet eftersom "Kalle" som kom först fortfarande väntar på de andra
             // för att bli expedierade, och inte bara detta men också han ska vänta på varje ny person tills stacken blir tom för
             // att få hans tur.
 
-            //ReverseText();
+            ReverseText();
 
             //---------------------------------------------- CheckParantheses() ----------------------------------------
             // Övning 4: CheckParantheses()
 
-            // CheckParantheses();
+            CheckParantheses();
 
             //-------------------------------------------------- Rekursion -------------------------------------------
             // Övning 5: Rekursion

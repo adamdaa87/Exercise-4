@@ -179,6 +179,18 @@
 
         }
 
+        static bool isMatchingPair(char character1, char character2)
+        {
+            if (character1 == '(' && character2 == ')')
+                return true;
+            else if (character1 == '{' && character2 == '}')
+                return true;
+            else if (character1 == '[' && character2 == ']')
+                return true;
+            else
+                return false;
+        }
+
         public static bool CkeckTheParentheses(string sentence)
         {
             Stack<char> stack = new Stack<char>();
@@ -189,14 +201,25 @@
                 if (c == '{' || c == '[' || c == '(')
                     stack.Push(c);
                 else if (c == '}' || c == ']' || c == ')')
-                    stack.Pop();
+                {
+                    if (stack.Count == 0)
+                    {
+                        return false; // not balanced
+                    }
+                    else if (!isMatchingPair(stack.Pop(), c))
+                    {
+                        return false; // not balanced
+                    }
+                }
             }
 
             if (stack.Count == 0)
-                return true;
-            else 
-                return false;
+                return true;  // balanced
+            else
+            {
                 
+                return false; // not balanced
+            }
         }
 
         public static int RecursiveOdd(int n)
